@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="audio-player-cont">
+        <div class="logo">
+            <img src="microsoft-groove-2.svg" width="60"/>
+        </div>
+        <div class="player">
+            <div id="song-title" class="song-title">My song title goes here My song title goes here My song title goes here</div>
+            <input id="song-slider" class="song-slider" type="range" min="0" step="1" onchange="seekSong()"  max="NaN" />
+            <div class="song-tracking">
+                <div id="current-time" class="current-time">00:00</div>
+                <div id="duration-time" class="duration">00:00</div>
+            </div>
+            <div class="controllers">
+                <img src="previous-media.png" width="30px" onclick="previous();" />
+                <img src="previous.png" width="30px" onclick="decreasePlaybackRate();" />
+                <img src="pause.png" onclick="playOrPauseSong(this);" />
+                <img src="next.png" width="30px" onclick="increasePlaybackRate();" />
+                <img src="next-media.png" width="30px" onclick="next();" />
+                <img src="volume-down-32.png" width="15px" />
+                <input id="volume-slider" class="volume-slider" type="range" min="0" max="1" step="0.01" onchange="adjustVolume();" />
+                <img src="volume-up-32.png"  width="15px"/>
+            </div>
+            <div id="next-song-title" class="next-song-title"><b>Next Song:</b> Next song title goes here...</div>
+        </div>
+    </div>
+
+    <!--<input id="slider"  type="range" min="0" step="1"  max="100" />-->
+    <!--<div id="slider-div">1</div>-->
+
+
+<script src="script.js"></script>
+</body>
+</html>

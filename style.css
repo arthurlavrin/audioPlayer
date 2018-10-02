@@ -1,0 +1,44 @@
+.audio-player-cont {
+    width: 600px;
+    height: 150px;
+    background-color: rgb(182, 184, 191);
+    border: 4px solid #1676db;
+    display: flex;
+    padding: 10px;
+    box-shadow: 0 0 15px black;
+    color: black;
+    font-size: 18px;
+}
+
+.logo {
+    align-self: center;
+    padding-right: 50px;
+}
+.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.song-slider {
+    width: 410px;
+}
+
+.song-title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 410px;
+}
+
+.song-tracking {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+.controllers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
